@@ -1,0 +1,17 @@
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #333acc;
+}
+
+a:active{
+    color: #333acc;
+}
+
+.mt-2{
+    background-color: #dddddd;
+    border-bottom: #000 solid 1px;
+}

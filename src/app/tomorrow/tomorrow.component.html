@@ -1,0 +1,22 @@
+<!-- <p>tomorrow works!</p> -->
+
+<div class="mt-2">
+    <h3 class="d-inline pl-2">Sports Filters : </h3>
+    <a class="mx-2">Cricket</a>
+    <a class="mx-2">E-Soccer</a>
+    <a class="mx-2">Soccer</a>
+    <a class="mx-2">Tennis</a>
+</div>
+
+<table class="mt-2 w-100 bg-white">
+    <tbody>
+        <tr *ngFor="let item of apiData">
+            <td>{{ item.day | date : 'HH:mm' }}</td>
+            <!-- <td>{{ item.formattedTime }}</td> -->
+            <td class="font-weight-bolder">{{ getSportName(item.sportid) }}</td>
+            <span class="pr-2 font-weight-bold">{{ item.seriesname }}</span>
+            <i class="fa fa-play text-muted" aria-hidden="true"></i>
+            <span class="pl-2 font-weight-bold">{{ item.matchname }}</span>
+        </tr>
+    </tbody>
+</table>

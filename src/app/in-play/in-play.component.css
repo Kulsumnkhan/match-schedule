@@ -1,0 +1,9 @@
+.example-accordion-item-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.fa-circle{
+    color: blue;
+}

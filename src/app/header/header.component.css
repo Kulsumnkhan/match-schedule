@@ -1,0 +1,28 @@
+.match-schedule{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.match-schedule a{
+    text-decoration: none;
+    color: #000000;
+    padding: 6px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.match-schedule a:not(:last-child){
+    border-right: 1px solid black;
+}
+
+.match-schedule a:hover{
+    background-color: #343848;
+    color: white;
+}
+
+.active{
+    background-color: #343848;
+    color: white !important;
+}
